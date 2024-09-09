@@ -5,65 +5,53 @@
     <meta charset="utf-8" />
     <title>Contacto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../views/tematica.html">Tematica</a></li>
-            <li><a href="../views/competencias.html">Competencias</a></li>
-            <li><a href="../views/eventos.html">Eventos Internacionales</a></li>
-            <li><a href="../views/destacados.html">Freestyler Mas Destacados</a></li>
-            <li><a href="../views/nosotros.html">Nosotros</a></li>
-            <li><a href="../views/contacto.html">Contacto</a></li>
-        </ul>
+        <h2 class="logo">Mundo Freestyle</h2>
+        <nav>
+            <ul>
+                <li ><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/tematica.html">Tematica</a></li>
+                <li><a href="../views/competencias.html">Competencias</a></li>
+                <li><a href="../views/eventos.html">Lo Mas Nuevo</a></li>
+                <li><a href="../views/destacados.html">Freestyler Mas Destacados</a></li>
+                <li><a href="../views/nosotros.html">Nosotros</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <br />
         <p>
-            Si tienes alguna sugerencia para poder mejorar nuestra pagina o si te gustaria que agreguemos algo en especifico
-            puedes usar el siguiente formulario:</p>
-
+            <b>
+                <i>
+                    Si tienes alguna sugerencia o comentario sobre nuestra pagina
+                    puedes usar el siguiente formulario
+                </i>
+            </b>
+        </p>
+       <form>
         <h1>Formulario</h1>
 
-        <form>
+        <label>Nombre</label>
 
-            <label>Nombre</label>
-            <br>
-            <input type="text" id="txtNombre" required>
-            <br>
-            <br>
+        <input type="text" class="txtNombre" required>
+        <br>
 
-            <label>Correo</label>
-            <br>
-            <input type="email" id="txtCorreo" required placeholder="nombre@email.com">
-            <br>
-            <br>
+        <label>Correo</label>
 
-            <label>Asunto:</label>
-            <br>
-            <select id="slAsunto">
-                <option value="COMENTARIO">Comentario</option>
-                <option value="COMPETENCIAS">Competencias</option>
-                <option value="EVENTOS INTERNACIONALES">Eventos Internacionales</option>
-                <option value="FREESTYLERS MAS DESTACADOS">Freestyler Mas Destacados</option>
-                <option value="SUGERENCIA">Sugerencia</option>
+        <input type="email" class="txtCorreo" required placeholder="nombre@email.com">
+        <br>
 
+        <label>Mensaje:</label>
 
-            </select>
-            <br>
-            <br>
-            <br />
-            <br />
+        <textarea class="txtMensaje" rows="5" cols="70"></textarea>
+        <br>
 
-            <label>Mensaje:</label>
-            <br>
-            <textarea id="txtMensaje" rows="5" cols="70"></textarea>
-            <br>
-            <br>
-
-            <!--<input type="submit" value="Enviar">-->
-            <button type="submit">Enviar</button>
+        <!--<input type="submit" value="Enviar">-->
+        <button type="submit">Enviar</button>
 
         </form>
     </main>
